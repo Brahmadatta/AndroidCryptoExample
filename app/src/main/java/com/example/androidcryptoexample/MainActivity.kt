@@ -32,6 +32,7 @@ import java.io.FileOutputStream
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        BuildConfig.API_KEY
         val cryptoManager = CryptoManager()
         setContent {
             AndroidCryptoExampleTheme {
